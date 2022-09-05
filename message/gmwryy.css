@@ -1,0 +1,63 @@
+// Import main font
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+// Simple reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &:before, &:after {
+        box-sizing: inherit;
+      
+       -webkit-font-smoothing: antialiased;
+    }
+}
+
+// Layout
+body {
+    padding: 24px 32px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  
+    color: #444;
+}
+
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+
+  border-bottom: 1px solid #ddd;
+
+  font-size: 32px;
+  font-weight: 100;
+  
+  color: #626262;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+a {
+  color: #2196f3;
+}
+
+
+// Forms
+input {
+  &:focus {
+		box-shadow: none;
+		outline: 0;
+  }
+  
+  &[type="text"] {
+    width: 400px;
+    padding: 8px 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+}
